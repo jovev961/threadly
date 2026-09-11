@@ -6,12 +6,23 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seed": "node scripts/seed.mjs seed",
+    "seed:verify": "node scripts/seed.mjs verify",
+    "seed:clean": "node scripts/seed.mjs clean",
+    "seed:test": "node --test scripts/seed.test.mjs",
+    "dev:seed": "node scripts/seed.mjs dev"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.9.5",
     "next": "16.3.4",
+    "nodemailer": "^10.0.0",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "sharp": "^0.35.4",
+    "validator": "^13.15.35"
   },
   "devDependencies": {
     "eslint": "^9",
